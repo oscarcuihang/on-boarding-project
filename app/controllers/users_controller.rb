@@ -21,6 +21,11 @@ class UsersController < ApplicationController
   def edit
   end
 
+  # GET /users/count
+  def count
+    @user_count = User.count
+  end
+
   # POST /users
   # POST /users.json
   def create
