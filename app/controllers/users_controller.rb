@@ -5,7 +5,6 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
-    logger.info 'index page'
   end
 
   # GET /users/1
@@ -37,9 +36,6 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    logger.info '111111'
-    logger.debug user_params
-
     @user = User.new(user_params)
     respond_to do |format|
       if @user.save

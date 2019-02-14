@@ -5,6 +5,7 @@ class User
   field :last_name, type: String
   field :age, type: Integer
   field :gender, type: Integer
+  field :address, type: Hash
 
   validates_presence_of :first_name, :last_name
   validates :age, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
