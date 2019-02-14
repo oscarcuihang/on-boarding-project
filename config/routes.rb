@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     member do
       get 'name'
     end
+    resources :shop do
+    end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
