@@ -1,6 +1,15 @@
-<h1>Editing User</h1>
+<div class=’container’ ng-controller=UsersEditController>
 
-<%= render 'form' %>
+  <h1>Editing User</h1>
+  <pre>{{message1}}</pre>
+  <h2>{{message2}}</h2>
 
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+  <%= render 'form' %>
+
+  <%= link_to 'Show', @user %> |
+  <%= link_to 'Back', users_path %>
+
+  <form ng-submit='addMessage'>
+    <input type="submit" name="sss" value="111">
+  </form>
+</div>
