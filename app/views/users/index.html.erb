@@ -1,6 +1,10 @@
-<p id="notice"><%= notice %></p>
+<div class=’container’ ng-controller=SomeController>
+
+  <p id="notice"><%= notice %></p>
 
 <h1>Listing Users</h1>
+ <pre>{{message1}}</pre>
+ <h2>{{message2}}</h2>
 
 <table>
   <thead>
@@ -27,3 +31,4 @@
 <br>
 
 <%= link_to 'New User', new_user_path %>
+</div>
