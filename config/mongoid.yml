@@ -9,7 +9,7 @@ development:
       # Provides the hosts the default client can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - blank_db_1:27017
+        - localhost:27017
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
@@ -144,3 +144,9 @@ test:
         read:
           mode: :primary
         max_pool_size: 1
+production:
+  clients:
+    default:
+      database: blank_production
+      hosts:
+        - localhost:27017
