@@ -1,6 +1,7 @@
-<h1>Editing User</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+<%= javascript_include_tag "controllers.users.edit" %>
+<div class="container" data-ng-controller="user_edit_controller" data-ng-init="init('%@user.id.to_s%')">
+  <h1>Editing User</h1>
+  <%= render 'form' %>
+  <%= link_to 'Show', @user %> |
+  <%= link_to 'Back', users_path %>
+</div>
